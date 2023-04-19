@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <titleRock Paper Scissor Game</title>
+  <style>
+    * {
+      background-color: #182647;
+    }
+  </style>
+</head>
+<body>
+  
+<div class="game-content" style=" background-color: #182647;">
+  <div class="rock-paper-scissor" style=" height: 600px; margin-top: 150px;">
+    <div style="display: flex; justify-content: center; width: auto; height: auto; ">
+      <div style="width: 500px;">
+        <div>
+          <h1 style="color: white; text-align: center; width: 300px;">Player Pick</h1>
+        </div>
+        <div style="text-align: center;">
+          <button id="rock" onclick="rockBtn()" style="padding: 20px; border-color: white; font-size: 40px;">👊</button>
+          <button id="paper" onclick="paperBtn()" style="padding: 20px; border-color: white; font-size: 40px;">✋</button>
+          <button id="scissor" onclick="scissorBtn()" style="padding: 20px; border-color: white; font-size: 40px;">✌</button>
+        </div>
+        <p id="playerPick"></p>
+      </div>
+      <div style="margin-right: 100px; color: white; width: 500px; text-align: center;">
+        <h1 >Player Score: <span id="playScore"></span></h1>
+      </div>
+      <div style="width: 700px; overflow-y: hidden; height: 490px;">
+        <h1 style="text-align: center; color: white;">Match History: <br>
+          <span id="mathHistory"></span>
+        </h1>
+      </div>
+      <div style="width: 500px; color: white; text-align: center; margin-left: 60px;">
+        <h1>AI Score: <span id="aiScore"></span> </h1>
+      </div>
+      <div style="width: 500px; text-align: center;">
+        <h1 style="color: white;">A.I Pick</h1>
+        <h1 id="aiPick"></h1>
+      </div>
+    </div>
+  </div>
+</div>
+  
+  <h1 style="display: none;">Result: <span id="resultPick"></span></h1>
+
+ 
+  <script src="assets/script/index.js"></script>
+
+
+</body>
+</html>
